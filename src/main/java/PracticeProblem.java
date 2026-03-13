@@ -35,45 +35,43 @@ public class PracticeProblem {
 	}
 
 	public static void q3() {
-		Scanner input =new Scanner(System.in);
-		int bool1;
-		System.out.print("Input a number: ");
-		bool1=input.nextInt();
-		System.out.println(0<bool1&&bool1<10);
-		input.close();
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Input a number: ");
+        double number = scanner.nextDouble();
+
+        boolean result = (number >= 0 && number <= 10);
+        System.out.println(result);
 
 	}
 
 	public static void q4() {
-		Scanner input =new Scanner(System.in);
-		int bool1;
-		System.out.print("Input a number: ");
-		bool1=input.nextInt();
-		System.out.println(!(bool1<0||bool1==5));
-		input.close();
+		Scanner scanner = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        double number = scanner.nextDouble();
+        boolean result = (number > 0 && number != 5);
+        System.out.println(result);
 
 
 	}
 
 	public static void q5() {
-		Scanner input =new Scanner(System.in);
-		String banana1;
-		String word1;
-		banana1="banana";
-		System.out.print("Input a word: ");
-		word1=input.nextLine();
-		System.out.println(word1==banana1);
-		input.close();
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Input a word: ");
+        String word = scanner.nextLine();
+
+        boolean result = !word.equals("banana");
+        System.out.println(result);
 
 	}
 
 	public static void q6() {
-		Scanner input =new Scanner(System.in);
-		int number1;
-		System.out.print("Input a number: ");
-		number1=input.nextInt();
-		System.out.println(number1%2==0);
-		input.close();
+    	Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int number = scanner.nextInt();
+        boolean result = (number % 2 == 0);
+        System.out.println("The integer " + number + " is " + result);
 		
 	}
 
